@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Installs node modules in local system.
+Install node modules in local system.
 
 ### `npm start`
 
