@@ -1,4 +1,4 @@
-import { HOME_LOADED, HOME_ERROR } from "../actions/types";
+import { HOME_LOADED, HOME_ERROR, HOMEVIEW_LOADED } from "../actions/types";
 const initialState = {
   homes: [],
   home: {},
@@ -13,6 +13,12 @@ export default function(home = initialState, action) {
       return {
         ...home,
         homes: payload,
+        loading: false
+      };
+    case HOMEVIEW_LOADED:
+      return {
+        ...home,
+        home: payload,
         loading: false
       };
     case HOME_ERROR:
